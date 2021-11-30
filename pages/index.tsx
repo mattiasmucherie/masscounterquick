@@ -45,9 +45,6 @@ const Home: NextPage = () => {
     100
   )
 
-  if (loading) {
-    return <div className={styles.container}>Loading</div>
-  }
   if (error) {
     return (
       <div className={styles.container}>Sorry, something went wrong :( </div>
@@ -75,7 +72,7 @@ const Home: NextPage = () => {
       </div>
     )
   }
-  return null
+  return <div className={styles.container}>Loading</div>
 }
 
 export default Home
