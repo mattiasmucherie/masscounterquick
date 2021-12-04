@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <ul className={styles.navbar}>
       <li>
-        <Link href="/">Home</Link>
+        <Link href="/">Maßcounter 2021</Link>
       </li>
       <li>
         <Link href="/auth">{loading ? "Loading" : signInText}</Link>

@@ -65,8 +65,12 @@ const Home: NextPage = () => {
         </main>
         {user && (
           <div className={styles.btns}>
-            <button onClick={debouncedAddDrink}>Add your drink</button>
-            <button onClick={debouncedRemoveDrink}>Remove your drink</button>
+            <button className={styles.btn} onClick={debouncedAddDrink}>
+              Add
+            </button>
+            <button className={styles.btn} onClick={debouncedRemoveDrink}>
+              Remove
+            </button>
           </div>
         )}
       </div>
